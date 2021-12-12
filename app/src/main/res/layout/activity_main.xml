@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/usuarioIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre de usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/contraseniaIniciar"
+        app:layout_constraintEnd_toEndOf="@+id/contraseniaIniciar"
+        app:layout_constraintStart_toStartOf="@+id/contraseniaIniciar" />
+
+    <EditText
+        android:id="@+id/contraseniaIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonIniciar"
+        android:layout_width="204dp"
+        android:layout_height="45dp"
+        android:text="Iniciar sesión"
+        app:layout_constraintEnd_toEndOf="@+id/contraseniaIniciar"
+        app:layout_constraintStart_toStartOf="@+id/contraseniaIniciar"
+        app:layout_constraintTop_toBottomOf="@+id/contraseniaIniciar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="164dp"
+        android:layout_height="163dp"
+        app:layout_constraintBottom_toTopOf="@+id/usuarioIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lolicon" />
+
+    <Button
+        android:id="@+id/botonRegistro"
+        android:layout_width="204dp"
+        android:layout_height="45dp"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="@+id/botonIniciar"
+        app:layout_constraintStart_toStartOf="@+id/botonIniciar"
+        app:layout_constraintTop_toBottomOf="@+id/botonIniciar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
